@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Analysis Result</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h2>Analysis Result</h2>
+        <div class="image-container">
+            <img src="/uploads/{{ filename }}" class="blurred-image">
+        </div>
+        <p><strong>Classification:</strong> {{ label }}</p>
+        <p><strong>Confidence:</strong> {{ confidence }}%</p>
+        <p><strong>Perceptual Hash:</strong> {{ hash_val }}</p>
+        {% if is_match %}
+            <p style="color:red;"><strong>⚠ Match with known content (ID: {{ match_id }})</strong></p>
+        {% else %}
+          <p><strong>No match in hash database.</strong></p>
+        {% endif %}
+        <a href="/">Analyze Another</a>
+    </div>
+</body>
+</html>

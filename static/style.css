@@ -1,0 +1,33 @@
+body {
+    background-color: #111;
+    color: #eee;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.container {
+    width: 400px;
+    margin: auto;
+    background-color: #222;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px #000;
+}
+
+input, button {
+    margin: 10px;
+    padding: 10px;
+}
+
+.blurred-image {
+    filter: blur(10px);
+    width: 300px;
+    border-radius: 10px;
+    transition: filter 0.3s ease;
+}
+
+.blurred-image:hover {
+    filter: blur(0); /* opcional para analistas que quiserem ver */
+}
+

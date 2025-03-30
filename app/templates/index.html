@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CSAM Detector - Upload</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Upload Image for Analysis</h1>
+        <form method="POST" enctype="multipart/form-data">
+            <input type="file" name="image" accept="image/png, image/jpeg" required>
+            <button type="submit">Upload & Analyze</button>
+        </form>
+    </div>
+</body>
+</html>
