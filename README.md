@@ -61,5 +61,5 @@ Please use responsibly and in compliance with local laws.
 
 ## 🔗 Author
 
-Developed by [Joas Antonio dos Santos](https://github.com/CyberSecurityUP)  
+Developed by [Joas Antonio dos Santos](https://www.linkedin.com/in/joas-antonio-dos-santos/)  
 Repo: [https://github.com/CyberSecurityUP/csam-detector](https://github.com/CyberSecurityUP/csam-detector)
